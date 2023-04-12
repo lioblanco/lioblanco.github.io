@@ -16,4 +16,4 @@ https://github.com/lioblanco/lioblanco.github.io
 
 Git Page Hub
 
-lioblanco.github.io
+https://lioblanco.github.io
