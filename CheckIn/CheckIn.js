@@ -113,6 +113,7 @@ const BuscarReserva = (Nro, Dni) => {
                         `
                         document.querySelector("#DatosReserva").innerHTML=str
                         HayValores=true
+                        asientoElegido = Reserva.ReservaAsiento
                         break
                     }
                 }
