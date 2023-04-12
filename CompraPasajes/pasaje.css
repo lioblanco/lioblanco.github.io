@@ -22,7 +22,8 @@ form input, form select{
 
 .contenedor {    
     background-image: url("/assets/img/comprarPasaje.jpg");
-    background-size: cover;    
+    background-size: cover;  
+      
 }
 
 .contenedorPasajes {
@@ -33,7 +34,7 @@ form input, form select{
     gap: 30px;
     justify-content: center;
     align-items: center;
-    height: 550px;
+    height: 800px;
 
 }
 
