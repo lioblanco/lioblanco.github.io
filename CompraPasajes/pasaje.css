@@ -1,0 +1,67 @@
+
+form{
+    width: 400px;
+    text-shadow: whitesmoke 2px 2px 5px, whitesmoke -2px -2px 5px, whitesmoke -2px 2px 5px, whitesmoke 2px -2px 5px;
+}
+
+form h1{
+    font-size: 1.5em;
+}
+
+form input, form select{
+    margin-bottom: 10px;
+}
+
+#divDatos {
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 4px;
+    background-color:#44444461;
+}
+
+.contenedor {    
+    background-image: url("/assets/img/comprarPasaje.jpg");
+    background-size: cover;    
+}
+
+.contenedorPasajes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 10px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+
+}
+
+.cardPasaje {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56, 52, 52);
+    color: white;
+    font-size: 13px;
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.75);
+    transition: transform 0.3s ease-out ;
+    padding: 5px;
+    
+}
+
+h2{
+    color:red;
+    font-size: 20px;
+    text-shadow: whitesmoke 2px 2px 3px, whitesmoke -2px -2px 3px, whitesmoke -2px 2px 3px, whitesmoke 2px -2px 3px;
+}
+
+.cardPasaje:hover {
+    transform: scale(1.4);
+    
+  }
+

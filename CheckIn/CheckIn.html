@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckIn</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="CheckIn.css">
+
+</head>
+
+<body class="contenedor">
+
+    <header class="cabecera">
+        <div id="ComponenteMnu" class="menu"></div>
+    </header>
+    
+    <main class="contenido">
+
+        <div class="divCont">
+            <form id="FrmBuscarReserva">
+                <h2>BUSCAR SU RESERVA</h2>
+                <label for="txtDni">DNI</label>
+                <input type="text" id="txtDni" placeholder="Ingrese su DNI (11222333)" required>
+                <label for="txtReservaId">Cód. de Reserva</label>
+                <input type="text" id="txtReservaId" placeholder="Ingrese el Código (001)" required>
+                <button class="btn btnVerde" type="submit" id="btnBuscarReserva">Buscar</button>
+            </form>
+            <form id="FrmReservarAsiento">
+                <input type="hidden" id="txtAsiento">
+                <input type="hidden" id="txtVueloId">
+                <p id="DatosReserva"></p>
+
+            </form>
+        </div>
+        <div class="divCont">
+            <div class="divCardAsientos"></div>
+            <button type="submit" class="btn" id="btnConfirmarAsiento" onclick="btnConfirmarAsiento()"
+                hidden>Confirmar Asiento</button>
+        </div>
+    </main>
+
+    <footer class="pie">Argentina Programa 4.0 - DESARROLLADOR WEB INICIAL - G1 C181</footer>
+    
+    <script src="/Componentes/menu/Menu.js"></script>
+    <script src="CheckIn.js"></script>
+
+</body>
+
+</html>

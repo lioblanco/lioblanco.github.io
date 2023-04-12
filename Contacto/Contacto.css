@@ -1,0 +1,39 @@
+form input {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    width: 100%;
+    height: 200px;
+    margin: 10px 0;
+    box-shadow: 0 0 1px 0 #444;
+    resize: vertical;
+    border-radius: 4px;
+}
+
+form span{
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+
+
+
+.contenedor {    
+    background-image: url("/assets/img/contacto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;     
+}
+
+form{
+    text-shadow: whitesmoke 2px 2px 5px, whitesmoke -2px -2px 5px, whitesmoke -2px 2px 5px, whitesmoke 2px -2px 5px;
+    width: 450px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 4px;
+    background-color:#44444461;
+}
+
+.contenido{
+    min-height: 90vh;
+}

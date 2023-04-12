@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Pasajes</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="pasaje.css">
+</head>
+
+<body class="contenedor">
+
+    <header class="cabecera">
+        <div id="ComponenteMnu" class="menu"></div>
+    </header>
+
+    <main class="contenido">
+
+        <form id="formularioPasajes">
+            <div id="divDatos">
+
+                <div>
+                    <h1>Pasajero</h1>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese Su Nombre" required maxlength="9">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese Su Apellido" required maxlength="9">
+                    <label for="TipoDNI">Tipo de Documento</label>
+                    <select name="TipoDNI" id="TipoDNI">
+                        <option value="DNI">Documento Nacional de Identidad</option>
+                        <option value="LEC">Libreta Electoral</option>
+                        <option value="Pass">Pasaporte</option>
+                    </select>
+                    <label for="NumeroDocumento">Documento N°</label>
+                    <input type="text" id="NumeroDocumento" name="NumeroDocumento" placeholder="Ingrese su Numero de Documento" required maxlength="8">
+                </div>
+
+                <div>
+                    <h1>Vuelo</h1> 
+                    <label for="origen">Origen</label>                   
+                    <select name="origen" id="origen" onchange="validarSelect()">
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Cordoba">Cordoba</option>
+                        <option value="Rosario">Rosario</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Tucuman">Tucuman</option>
+                        <option value="Bariloche">Bariloche</option>
+                    </select>
+                    <label for="destino">Destino</label>
+                    <select name="destino" id="destino" onchange="validarSelect()">
+                        <option value="Cordoba">Cordoba</option>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Rosario">Rosario</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Tucuman">Tucuman</option>
+                        <option value="Bariloche">Bariloche</option>
+                    </select>
+                    <span id="error"></span>
+
+                    <label for="fecha">Fechas Disponibles</label>
+                    <select name="fecha" id="fecha"> 
+                        <option value="10/05/2023">10/05/2023</option>
+                        <option value="15/05/2023">15/05/2023</option>
+                        <option value="27/06/2023">27/06/2023</option>
+                        <option value="30/06/2023">30/06/2023</option>                        
+                    </select>
+                    <label for="horario">Hora De Embarque</label>
+                    <select name="horario" id="horario" >
+                        <option value="02:25">02:25</option>
+                        <option value="13:05">13:05</option>
+                        <option value="16:30">16:30</option>
+                        <option value="21:45">21:45</option>
+                        <option value="22:30">22:30</option>
+                    </select>
+                </div>
+                <div id="divBoton">                
+                    <button class="btn btnVerde" type="submit" id="btnEnviar">Comprar</button>
+                </div>
+            </div>
+
+        </form>
+
+        <div class="contenedorPasajes"></div>
+    
+    </main>
+
+    <footer class="pie">Argentina Programa 4.0 - DESARROLLADOR WEB INICIAL - G1 C181</footer>
+
+    <script src="/Componentes/menu/Menu.js"></script>
+    <script src="pasaje.js"></script>
+</body>
+
+</html>
